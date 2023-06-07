@@ -186,6 +186,6 @@ main.main {
 
 .collection-content__img {
     border-radius: 1rem;
-    height: 10rem;
+    height: 15rem;
     border: 0.25rem solid var(--color-primary);
 }
