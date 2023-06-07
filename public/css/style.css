@@ -1,5 +1,5 @@
 /* FONT STUFF */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* CSS RESET 
     Attribution:
@@ -63,7 +63,7 @@ table {
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: var(--color-primary);
     /* background img source: https://pixabay.com/vectors/floral-background-vintage-background-6622475/ */
