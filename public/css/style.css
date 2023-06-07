@@ -1,5 +1,8 @@
-/* CSS RESET 
+/* FONT STUFF */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* CSS RESET 
+    Attribution:
     http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
@@ -48,5 +51,141 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* CSS RESET END */
+
+/* DEFAULTS */
+:root {
+    --color-primary: #fff;
+    --color-secondary: #000;
+    --color-tertiary: #bfbfbf;
+    --color-quaternary: #008080;
+    --color-quinary: #4aa3a3;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--color-primary);
+    /* background img source: https://pixabay.com/vectors/floral-background-vintage-background-6622475/ */
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url("/img/background.png");
+
+    background-color: var(--color-quaternary);
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* anchors */
+a,
+a:link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--color-quinary);
+}
+
+/* paragraphs */
+p {
+    line-height: 1.5;
+    margin: 1.75rem 4rem;
+}
+/* DEFAULTS END */
+
+/* Header & Footer */
+header.header,
+footer.footer {
+    background-color: var(--color-secondary);
+    opacity: 0.7;
+    padding: 3rem 4rem;
+}
+
+.header__site-name {
+    font-size: 2rem;
+}
+
+/* Nav */
+ul.nav {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.35rem;
+}
+
+/* Main */
+main.main {
+    min-height: 50vh;
+    padding: 4rem;
+    text-align: center;
+}
+
+.main-content__welcome-content,
+.main-content__about-content {
+    font-size: 1.25rem;
+}
+
+.main-content__link-to-collection a,
+.main-content__link-to-collection a:link {
+    display: inline-block;
+    background-color: var(--color-quaternary);
+    border: 0.25rem solid var(--color-primary);
+    font-size: 3rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.main-content__link-to-collection a:hover {
+    text-decoration: none;
+    background-color: var(--color-quinary);
+}
+
+.main-content__link-to-collection a:active {
+    color: var(--color-quaternary);
+}
+
+/* Collection */
+.collection-content {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.collection-content__img {
+    border-radius: 1rem;
+    height: 10rem;
+    border: 0.25rem solid var(--color-primary);
+}

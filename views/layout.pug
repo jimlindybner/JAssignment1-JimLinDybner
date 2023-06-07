@@ -3,16 +3,28 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        title #{title} | Test Website
+        title #{title} | The Flower Shop
         link(rel="stylesheet", href="/css/style.css")
     body 
         header.header
             .header__content-wrapper
                 .header__site-name
-                    a(href="#") Test Site
+                    a(href="/") The Flower Shop
+                .header__nav
+                    ul.nav
+                        li.nav__navlink
+                            a(href="/") Home
+                        li.nav__navlink
+                            a(href="/about") About
+                        li.nav__navlink
+                            a(href="/collection") Collection
         main.main
             block layout-content
         footer.footer
             .footer__content-wrapper
                 .footer__copyright
-                    p &copy; 2023 Jim Lin-Dybner
+                    p &copy; 
+                        span.footer__copyright-yr
+                        span.footer__copyright-txt  
+                            a(href="http://lindybner.com", target="_blank") Jim Lin-Dybner
+        script(src="/js/script.js") 

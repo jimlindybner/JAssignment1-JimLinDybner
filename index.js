@@ -17,6 +17,14 @@ app.get("/", (req, res) => {
     res.render("index", { title: "Home" });
 });
 
+app.get("/about", (req, res) => {
+    res.render("about", {title: "About"});
+});
+
+app.get("/collection", (req, res) => {
+    res.render("collection", {title: "Collection"});
+});
+
 //set up server listening
 app.listen(port, () => {
     console.log(`Listening on http://localhost:${port}`);
