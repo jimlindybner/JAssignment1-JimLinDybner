@@ -66,7 +66,6 @@ html {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     color: var(--color-primary);
-    /* background img source: https://pixabay.com/vectors/floral-background-vintage-background-6622475/ */
     background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url("/img/background.png");
 
     background-color: var(--color-quaternary);
