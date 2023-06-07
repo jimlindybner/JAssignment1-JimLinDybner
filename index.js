@@ -9,6 +9,10 @@ const port = process.env.PORT || "8888";
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
+//set up public folder path for static files
+app.use(express.static(path.join(__dirname, "public")));
+
+//rendering specific views/pages
 app.get("/", (req, res) => {
     res.render("index", { title: "Home" });
 });
