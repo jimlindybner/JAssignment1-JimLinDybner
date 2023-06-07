@@ -2,6 +2,10 @@
 
 Simple flower shop website concept
 
+## copy source
+
+ChatGPT was used to generate website copy
+
 ## img sources 
 ### background img source:
 - https://pixabay.com/vectors/floral-background-vintage-background-6622475/
