@@ -185,7 +185,7 @@ main.main {
 }
 
 .collection-content__img {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     height: 15rem;
     border: 0.25rem solid var(--color-primary);
 }
