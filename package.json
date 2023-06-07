@@ -1,0 +1,11 @@
+{
+  "name": "jassignment1-jimlindybner",
+  "version": "1.0.0",
+  "description": "JS/XML assgn 1 dummy website test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Lin-Dybner",
+  "license": "ISC"
+}
