@@ -4,12 +4,14 @@ block layout-content
     .main-content
         h1.main-content__h1 Our Collection
         div.main-content__collection-content.collection-content
-            img(src="/img/daisy.jpg", alt="daisy flower").collection-content__img
-            img(src="/img/lotus.jpg", alt="lotus flower").collection-content__img
-            img(src="/img/marigold.jpg", alt="marigold flower").collection-content__img
-            img(src="/img/rose-blue.jpg", alt="blue rose flower").collection-content__img
-            img(src="/img/rose-multicolour.jpg", alt="rose flower").collection-content__img
-            img(src="/img/rose-red.jpg", alt="red rose flower").collection-content__img
-            img(src="/img/lily.jpg", alt="lily flower").collection-content__img
-            img(src="/img/poppy.jpg", alt="poppy flower").collection-content__img
-            img(src="/img/rose-orange.jpg", alt="orange rose flower").collection-content__img
+            //- img(src="/img/daisy.jpg", alt="daisy flower").collection-content__img
+            //- img(src="/img/lotus.jpg", alt="lotus flower").collection-content__img
+            //- img(src="/img/marigold.jpg", alt="marigold flower").collection-content__img
+            //- img(src="/img/rose-blue.jpg", alt="blue rose flower").collection-content__img
+            //- img(src="/img/rose-multicolour.jpg", alt="rose flower").collection-content__img
+            //- img(src="/img/rose-red.jpg", alt="red rose flower").collection-content__img
+            //- img(src="/img/lily.jpg", alt="lily flower").collection-content__img
+            //- img(src="/img/poppy.jpg", alt="poppy flower").collection-content__img
+            //- img(src="/img/rose-orange.jpg", alt="orange rose flower").collection-content__img
+            each collectionImg in img
+                img(src=collectionImg.imgPath, alt=collectionImg.imgAlt).collection-content__img
