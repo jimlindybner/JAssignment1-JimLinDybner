@@ -5,6 +5,12 @@ const express = require("express"); const path = require("path");
 const app = express();
 const port = process.env.PORT || "8888";
 
+//MongoDB stuff
+const { MongoClient } = require("mongodb");
+const dbUrl = "mongodb://localhost:27017/testdb"; //default port is 27017
+// const dbUrl = "mongodb+srv://<username>:<password>@cluster0.9s8pywv.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(dbUrl);
+
 //set up Express app to use Pug as the template engine
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
